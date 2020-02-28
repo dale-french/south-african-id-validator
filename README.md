@@ -16,8 +16,9 @@ Install using NPM / Yarn
 npm i south-african-id-validator
 ```
 
-````bash
+```bash
 yarn add south-african-id-validator
+```
 
 ```js
 import { validateIdNumber } from 'south-african-id-validator'
@@ -28,16 +29,7 @@ validateIdNumber(
 
 // example
 validateIdNumber('7311190013080);
-
-// ************
-{
-  valid: true,
-  gender: 'female',
-  isCitizen: true,
-  DOB: 1973-11-18T22:00:00.000Z
-}
-// ************
-````
+```
 
 ### Demo
 
