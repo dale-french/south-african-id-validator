@@ -2,6 +2,7 @@ import { validateIdNumber, parseGender, parseCitizenship, parseDOB } from '.';
 
 test('ID number is validated correctly', () => {
   expect(validateIdNumber('7311190013080').valid).toBe(true);
+  console.log(validateIdNumber('7311190013080').DOB);
   expect(validateIdNumber('7311190013080').gender).toBe('female');
   expect(validateIdNumber('7311190013080').isCitizen).toBe(true);
   expect(validateIdNumber('23123123123').valid).toBe(false);
