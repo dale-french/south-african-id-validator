@@ -4,7 +4,7 @@
   "description": "Dead simple validator for South African ID numbers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel index.js -o index.min.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/dale-french/south-african-id-validator/issues"
   },
-  "homepage": "https://github.com/dale-french/south-african-id-validator#readme"
+  "homepage": "https://github.com/dale-french/south-african-id-validator#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  }
 }
