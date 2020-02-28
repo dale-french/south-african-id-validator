@@ -1,6 +1,6 @@
 # 🇿🇦 south-african-id-validator 🇿🇦
 
-Dead simple validator for South African ID numbers 🇿🇦
+Dead simple validator for South African ID numbers
 
 This validator returns the following if the ID Number is valid
 
@@ -21,14 +21,14 @@ yarn add south-african-id-validator
 ```
 
 ```js
-import { validateIdNumber } from 'south-african-id-validator'
+import { validateIdNumber } from "south-african-id-validator";
 
 validateIdNumber(
   ID_NUMBER_TO_VALIDATE // string
-)
+);
 
 // example
-validateIdNumber('7311190013080);
+validateIdNumber("7311190013080");
 ```
 
 ### Demo
