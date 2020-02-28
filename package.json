@@ -4,7 +4,8 @@
   "description": "Dead simple validator for South African ID numbers",
   "main": "index.min.js",
   "scripts": {
-    "build": "babel index.js -o index.min.js"
+    "build": "babel index.js -o index.min.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
   }
 }
