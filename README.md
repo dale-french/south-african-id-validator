@@ -1,6 +1,6 @@
 # 🇿🇦 south-african-id-validator 🇿🇦
 
-Dead simple validator for South African ID numbers. Takes into eligibility age into account (16 years).
+Dead simple validator for South African ID numbers. Takes eligibility age into account (16 years).
 
 This validator returns the following if the ID Number is valid
 
