@@ -55,16 +55,23 @@ export const parseDOB = idNumber => {
   // get year, and assume the century
   const currentYear = new Date().getFullYear();
   const currentCentury = Math.floor(currentYear / 100) * 100;
+  const currentMonth = new Date().getMonth();
+  const currentDay = new Date().getDay();
+  
   let yearPart = currentCentury + parseInt(idNumber.substring(0, 2), 10);
-  if (yearPart > currentYear) {
-    yearPart -= 100; // must be last century
-  }
 
   // In Javascript, Jan=0. In ID Numbers, Jan=1.
   const monthPart = parseInt(idNumber.substring(2, 4), 10) - 1;
 
   const dayPart = parseInt(idNumber.substring(4, 6), 10);
 
+  // only 16 years and above are eligible for an ID
+  const eligibleYear = currentYear - 16;
+  // make sure the ID's DOB is not below 16 years from today, if so it's last century issue
+  if (yearPart > eligibleYear || yearPart === eligibleYear && (monthPart > currentMonth || monthPart === currentMonth && dayPart > currentDay)) {
+    yearPart -= 100; // must be last century
+  }
+  
   const dateOfBirth = new Date(yearPart, monthPart, dayPart);
 
   // validate that date is in a valid range by making sure that it wasn't 'corrected' during construction
