@@ -1,6 +1,6 @@
 {
   "name": "south-african-id-validator",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "description": "Validate South African ID numbers and extract date of birth, gender, and citizenship. TypeScript-native, zero dependencies, runs anywhere.",
   "keywords": [
     "id",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/dale-french/south-african-id-validator/issues"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Dale French (https://github.com/dale-french)",
   "repository": {
     "type": "git",

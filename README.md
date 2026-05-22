@@ -102,4 +102,4 @@ v1 exported four functions (`validateIdNumber`, `parseGender`, `parseCitizenship
 
 ## License
 
-ISC
+MIT
