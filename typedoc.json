@@ -1,0 +1,13 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs/dist",
+  "name": "south-african-id-validator",
+  "readme": "README.md",
+  "includeVersion": true,
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "navigationLinks": {
+    "GitHub": "https://github.com/dale-french/south-african-id-validator"
+  }
+}
