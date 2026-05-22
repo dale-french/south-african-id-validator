@@ -1,6 +1,6 @@
 {
   "name": "south-african-id-validator",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Validate South African ID numbers and extract date of birth, gender, and citizenship. TypeScript-native, zero dependencies, runs anywhere.",
   "keywords": [
     "id",
